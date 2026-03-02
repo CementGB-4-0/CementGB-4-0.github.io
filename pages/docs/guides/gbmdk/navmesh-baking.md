@@ -1,5 +1,7 @@
 # NavMesh Baking
+
 ---
+
 ## What is a NavMesh?
 
 NavMeshes are static spots of a map where AIs know it is safe to walk.
@@ -7,6 +9,7 @@ NavMeshes are static spots of a map where AIs know it is safe to walk.
 If a map does not have a NavMesh, AIs will continuously walk straight forward, not move at all, or jump frantically. NavMeshes can only be on maps that are entirely static, such as Roof, Incinerator, and others. Whereas maps like Trawler, Wheel, and others, do not and cannot have NavMeshes, because they are dynamic non-static maps.
 
 ---
+
 ## How do I bake a NavMesh?
 
 1. Make sure all GameObjects you want AIs to be able to walk on have the "Static" checkbox checked.
@@ -14,7 +17,9 @@ If a map does not have a NavMesh, AIs will continuously walk straight forward, n
 3. Go to the "Bake" section of the tab.
 4. Click "Bake".
 5. Done! There should now be a blue highlight on the static GameObjects. That is the NavMesh itself.
+
 ---
+
 ### Troubleshooting
 
 - I don't see any blue highlights on my map! Where is it?

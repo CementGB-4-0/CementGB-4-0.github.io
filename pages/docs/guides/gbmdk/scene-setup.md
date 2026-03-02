@@ -25,7 +25,7 @@ You can also more directly set the `ModName` variable in the Addressable profile
 ![rename-exported-folder-example](../../images/rename-exported-folder-example.gif)
 
 > [!NOTE] 
-> This will sometimes revert back to `NewMod` or `ModName` if the project is closed then reopened. Simply do this again when you reopen it and you will be good.
+> This will revert back to `NewMod` or `ModName` in rare cases if the project is closed then reopened. Simply do this again when you reopen it and you'll be fine.
 
 You have now successfully renamed your map.
 

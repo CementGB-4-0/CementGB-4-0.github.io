@@ -2,7 +2,7 @@
 
 In order for objects to function in Gang Beasts, they need certain components and settings applied to them, depending on whether they move around (dynamic) or if they cannot be moved around (static).
 
-Eventually, there will be tools for creating and setting these components automatically.
+Eventually, there may be tools for creating and setting these components automatically.
 
 > [!WARNING]
 > Settings not listed in the following sections should be left as default unless you know what you're doing.
@@ -28,28 +28,30 @@ Some scripts are the exact same across any object. They are configured as follow
     > This is an optional setting. It will end up assigned in-game regardless.
 - Cached Colliders: [Colliders child of root GameObject]
     > This is an optional setting. It will end up assigned in-game regardless.
----
+
 ## Dynamic GameObjects
+
 ---
+
 ### Non-component settings:
   - Tag: **Prop (Low Priority)** [in most use cases]
   - Layer: **Default/Environment** [use Default in most cases]
   - Static: **Disabled**
-  
+
 ### Rigidbody
 - Mass: [any]
   >  Lower values will result in lighter objects. It's best to test out a good mass for your object using Unity Explorer in Gang Beasts itself. For example, the boxes that spawn in Incinerator have a mass of 60. Heavier objects, such as the benches in Aquarium, should have a mass between 120-220.
 - Drag: [0-1]
    > Leaving this at its default will work fine. There shouldn't be much of a change, but it's probably best not to go above 1.
-- Angular Drag: 0.05
+- Angular Drag: **0.05**
    > Again, leaving this at its default will work fine. There shouldn't be any scenario where it would need to be changed.
 - Use Gravity: **Enabled**
 - Is Kinematic: **Disabled**
   > Having this enabled will make the GameObject unable to move. More info [here](<https://docs.unity3d.com/ScriptReference/Rigidbody-isKinematic.html>), in the Unity docs.
 - Interpolate: **Interpolate**
-  > This will prevent some jitter and instability that comes with no interpolation. The reason this must be enabled might have something to do with the game's networking. More info [here](https://docs.unity3d.com/6000.1/Documentation/ScriptReference/Rigidbody-interpolation.html), in the Unity docs.
+  > This will prevent some jitter and instability that comes with no interpolation. The reason this must be enabled might have something to do with the game's networking. More info [here](https://docs.unity3d.com/2021.3/Documentation/ScriptReference/Rigidbody-interpolation.html), in the Unity docs.
 - Collision Detection: **Discrete [or] Continuous**
-  > Stuck on figuring out which one to use? [Here](https://docs.unity3d.com/6000.1/Documentation/Manual/choose-collision-detection-mode.html)'s how the Unity docs help you decide.
+  > Stuck on figuring out which one to use? [Here](https://docs.unity3d.com/2021.3/Documentation/Manual/choose-collision-detection-mode.html)'s how the Unity docs help you decide.
 
 ### Interactable Object
 
@@ -59,12 +61,14 @@ Some scripts are the exact same across any object. They are configured as follow
 
 - Target Child: [Root Transform]
 - Delta Threshold: **0.05**
----
+
 ## Static GameObjects
+
 ---
+
 ### Non-component settings:
   - Tag: **Untagged**
-  - Layer: **Environment**
+  - Layer: **Default**
   - Static: **Enabled**
 
 ### Rigidbody
@@ -72,6 +76,6 @@ Some scripts are the exact same across any object. They are configured as follow
 - Is Kinematic: **Enabled**
     > Having this enabled will make the GameObject unable to move. More info [here](https://docs.unity3d.com/ScriptReference/Rigidbody-isKinematic.html), in the Unity docs.
 - Interpolate: **Interpolate**
-    > This will prevent some jitter and instability that comes with no interpolation. The reason this must be enabled might have something to do with the game's networking. More info [here](https://docs.unity3d.com/6000.1/Documentation/ScriptReference/Rigidbody-interpolation.html), in the Unity docs.
+    > This will prevent some jitter and instability that comes with no interpolation. The reason this must be enabled might have something to do with the game's networking. More info [here](https://docs.unity3d.com/2021.3/Documentation/ScriptReference/Rigidbody-interpolation.html), in the Unity docs.
 - Collision Detection: **Discrete [or] Continuous**
-    > Stuck on figuring out which one to use? [Here](https://docs.unity3d.com/6000.1/Documentation/Manual/choose-collision-detection-mode.html)'s how the Unity docs help you decide.
+    > Stuck on figuring out which one to use? [Here](https://docs.unity3d.com/2021.3/Documentation/Manual/choose-collision-detection-mode.html)'s how the Unity docs help you decide.
