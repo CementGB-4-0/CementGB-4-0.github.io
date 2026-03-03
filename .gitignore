@@ -133,6 +133,9 @@ dist
 .replit
 replit.nix
 
+# Rider files
+.idea/
+
 # DocFx files
 .cache
 pages/docs/_site/
