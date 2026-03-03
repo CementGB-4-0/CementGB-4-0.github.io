@@ -1,14 +1,6 @@
-- name: Homepage
-  href: ../index.md
-- name: Introduction To IL2CPP
-  href: introduction-to-il2cpp.md
-- name: GBMDK
-  items:
-    - href: gbmdk/gbmdk-index.md
-    - href: gbmdk/scene-setup.md
-    - href: gbmdk/component-setup.md
-    - href: gbmdk/adding-music.md
-    - href: gbmdk/choosing-gamemodes.md
-    - href: gbmdk/navmesh-baking.md
-- name: Credits
-  href: credits.md
+- href: ../index.md
+- name: Runtime
+  href: runtime/toc.yml
+- name: GBMDK 
+  href: gbmdk/toc.yml
+-  href: credits.md
